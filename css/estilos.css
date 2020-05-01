@@ -40,6 +40,7 @@ h2{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .hero-foto{
@@ -72,12 +73,17 @@ figure{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .proyect-title{
     font-size: 25px;
     margin-top: 0;
     margin-bottom: 10px;
+}
+
+.proyect-subtitle{
+    font-size: 18px;
 }
 
 .proyect-subtitle, .proyect-date, .proyect-url{
@@ -93,11 +99,17 @@ figure{
 }
 
 .proyect-details{
-    width: 500px;
+    width: 50%;
+}
+
+.proyect-imageContainer{
+    width: 50%;
+    text-align: right
 }
 
 .proyect-image{
-    width: 200px;
+    width: 300px;
+    max-width: 100%;
 }
 
 .header{
@@ -107,6 +119,7 @@ figure{
     justify-content: space-between;
     height: 70px;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .menu{
@@ -137,6 +150,7 @@ figure{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .footer img{
@@ -155,7 +169,7 @@ figure{
 .event{
     border: 1px solid gray;
     margin: 10px;
-    width: 500px;
+    width: 450px;
     flex-shrink: 0;
     border-radius: 10px;
     overflow: hidden;
@@ -206,6 +220,7 @@ figure{
     display: flex;
     align-items: center ;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .social-link{
@@ -259,11 +274,74 @@ figure{
 
 .container{
     /* border: 1px solid red; */
-    width: 1200px;
+    max-width: 1000px;
+    flex: 1; /*toma todo el ancho disponible*/
     margin: 0 auto;
     display: inherit;
     justify-content: inherit;
     align-items: inherit;
     height: inherit;
     flex-wrap: inherit;
+}
+
+
+/* Desktop first que empiece desde el MQ mas grande */
+
+@media screen and (max-width: 1024px){
+
+}
+
+@media screen and (max-width: 767px){
+    .header{
+        display: block;
+        height: auto;
+    }
+    .header ol {
+        display: block;
+    }
+    .header ol li{
+        height: 50px;
+    }
+    .header a {
+        justify-content: center;
+    }
+    .header .logo{
+        text-align: center;
+    }
+
+    .proyect{
+        display: block;
+    }
+
+    .proyect-imageContainer{
+        width: auto;
+        text-align: center;
+    }
+
+    .proyect-details{
+        width: auto;
+        font-size: 16px; /*por deault el tamaño de fuente es 16*/
+    }
+    .proyect-title{
+        font-size: 1.5em;
+        margin-bottom: 0.3em;
+    }
+    .proyect-subtitle, .proyect-url, .proyect-date{
+        font-size: 1.2em;
+        margin: .4em 0;
+    }
+    .proyect-description{
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .proyect-details{
+        font-size: 12px;
+    }
+
+}
+
+@media screen and (max-width: 320px){
+    
 }
