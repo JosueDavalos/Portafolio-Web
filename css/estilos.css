@@ -288,7 +288,9 @@ figure{
 /* Desktop first que empiece desde el MQ mas grande */
 
 @media screen and (max-width: 1024px){
-
+    .container{
+        padding: 0 1em;
+    }
 }
 
 @media screen and (max-width: 767px){
@@ -351,6 +353,27 @@ figure{
     .event-detail{
         margin: -2em .5em .5em .5em ;
         padding: 1em;
+    }
+
+    .contact{
+        height: auto;
+        padding: 1.5em 0;
+        text-align: center;
+        display: block;
+    }
+
+    .formulario-email button{
+        margin: 1em auto;
+    }
+
+    .formulario-email h3{
+        margin-top: 0;
+    }
+
+    .footer{
+        display: block;
+        text-align: center;
+        border: 1px solid transparent; /**para reparar los bordes blancos entre secciones/
     }
 
 }
