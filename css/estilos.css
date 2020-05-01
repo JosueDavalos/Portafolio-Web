@@ -1,0 +1,269 @@
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: normal
+}
+
+h1{
+    font-size: 40px;
+    line-height: 1.5;
+    letter-spacing: -.2px;
+    color: white;
+    margin: 0;
+    /* margin: 100px 150px 70px 30px */
+}
+
+h1 strong{
+    color: #026fff
+}
+
+h2{
+    color: #026fff;
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 30px
+}
+
+.hero{
+    height: 300px;
+    background-color: #1b2127;
+    /* background-image: url("../imagenes/foto.jpg"); */
+    /* background-size: 300px 300px; */
+    /* background-repeat: no-repeat; */
+    /* background-position-x: right; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-foto{
+    height: inherit;
+    object-fit: cover;
+}
+
+ol{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+figure{
+    margin: 0;
+}
+
+.portafolio{
+    background: #fafafa;
+    padding: 20px;
+}
+
+.proyect{
+    border: 1px solid gray;
+    border-radius: 10px;
+    /* margin: 10px; */
+    margin-bottom: 15px;
+    padding: 20px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.proyect-title{
+    font-size: 25px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.proyect-subtitle, .proyect-date, .proyect-url{
+    margin: 10px 0;
+}
+
+.proyect-description{
+    font-size: 20px;
+}
+
+.proyect strong{
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.proyect-details{
+    width: 500px;
+}
+
+.proyect-image{
+    width: 200px;
+}
+
+.header{
+    background-color: #1b2127;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    align-items: center;
+}
+
+.menu{
+    height: inherit;
+}
+
+.header ol{
+    display: flex;
+    height: inherit;
+}
+
+.header ol li{
+    height: inherit;
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.footer{
+    color: white;
+    background: #1b2127;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer img{
+    vertical-align: middle;
+    padding-left: 20px;
+}
+
+.footer a{
+    color: white;
+}
+
+.footer p{
+    margin: 5px 0;
+} 
+
+.event{
+    border: 1px solid gray;
+    margin: 10px;
+    width: 500px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #f4fbff;
+}
+
+.events-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.event img{
+    width: 500px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.event-detail{
+    margin: 20px 40px;
+    margin-top: -40px;
+    background-color: white;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+}
+
+.event-description{
+    text-align: justify;
+}
+
+.event-url{
+    color: #056fff;
+    border: 1px solid #056fff;
+    padding: 5px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.event-list-title{
+    margin-left: 10px;
+}
+
+.contact{
+    background-color: #056fff;
+    color: white;
+    height: 150px;
+    display: flex;
+    align-items: center ;
+    justify-content: space-between;
+}
+
+.social-link{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+    background-size: 50px 50px;
+}
+
+.social-link.twitter{
+    background-image: url('../imagenes/twitter.svg');
+}
+
+.social-link.facebook{
+    background-image: url('../imagenes/facebook.svg');
+}
+
+.social-link.github{
+    background-image: url('../imagenes/github.svg');
+}
+
+.social-link.instagram{
+    background-image: url('../imagenes/instagram.svg');
+}
+
+.formulario-email input{
+    border-color: gray;
+    border-radius: 5px;
+    padding: 10px 20px 10px 25px;
+    background-image: url('../imagenes/envelope.svg');
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 5px;
+}
+
+.formulario-email button{
+    display: block;
+    background: transparent;
+    color: white;
+    padding: 10px 0px;
+    border-radius: 5px;
+    width: 100px;
+    margin-top: 10px;
+}
+
+.formulario-email h3{
+    font-family: 'Source Sans Pro', sans-serif;
+} 
+
+.container{
+    /* border: 1px solid red; */
+    width: 1200px;
+    margin: 0 auto;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit;
+    flex-wrap: inherit;
+}
