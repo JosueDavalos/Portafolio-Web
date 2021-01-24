@@ -302,6 +302,17 @@ figure{
     position: relative;
 }
 
+.modal-content{
+    width: 120% !important;
+    height: auto !important;
+    
+}
+
+.close-modal{
+    width: 20px !important;
+    height: auto !important;
+
+}
 
 /* Desktop first que empiece desde el MQ mas grande */
 
